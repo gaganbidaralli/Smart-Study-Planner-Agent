@@ -92,27 +92,3 @@ Refer to [DEMO_SCRIPT.txt](file:///d:/onedrive/Desktop/Agent/smart-study-planner
 3. **MCP tool errors / command not found**:
    - *Fix*: Ensure `uv` is installed and in your environment path since the MCP connection params spawn the server via `uv run`.
 
-## Push to GitHub
-
-1. Create a new repo at https://github.com/new
-   - Name: smart-study-planner
-   - Visibility: Public or Private
-   - Do NOT initialize with README (you already have one)
-
-2. In your terminal, navigate into your project folder:
-   cd smart-study-planner
-   git init
-   git add .
-   git commit -m "Initial commit: smart-study-planner ADK agent"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/smart-study-planner.git
-   git push -u origin main
-
-3. Verify .gitignore includes:
-   .env          ← your API key — must NEVER be pushed
-   .venv/
-   __pycache__/
-   *.pyc
-   .adk/
-
-⚠ NEVER push .env to GitHub. Your API key will be exposed publicly.
